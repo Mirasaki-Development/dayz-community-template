@@ -44,7 +44,7 @@ const LeaderboardTable = ({
 }) => {
   data = data.slice(0, config.cftools.leaderboard.showAmount);
   return (
-    <Table containerClassName='max-h-[60vh] border max-w-4xl mx-auto bg-background' >
+    <Table containerClassName='max-h-[60lvh] border max-w-4xl mx-auto bg-background' >
       <TableCaption className='pb-5'>
         Displaying data collected by the CFTools Data API.
       </TableCaption>

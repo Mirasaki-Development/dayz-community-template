@@ -112,7 +112,7 @@ export const config: Config = {
   ],
   cftools: {
     leaderboard: {
-      enabled: false,
+      enabled: true,
       defaultSortValue: 'kills',
       allowedSortValues: ['kills', 'deaths', 'kdratio', 'longest_kill', 'longest_shot', 'playtime', 'suicides'],
       blacklistedCFToolsIds: [],

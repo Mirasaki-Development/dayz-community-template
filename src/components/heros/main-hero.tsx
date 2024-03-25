@@ -18,7 +18,7 @@ const MainHero = () => {
       ref={ref}
       className={cn(
         "bg-blend-multiply bg-no-repeat bg-center w-full",
-        "flex items-center min-h-[100vh]",
+        "flex items-center min-h-[100lvh]",
         'pt-20', // Note: Uses padding because Gutter isn't used for the header in root layout
       )}
       style={{

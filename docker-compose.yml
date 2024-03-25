@@ -17,5 +17,3 @@ services:
       - app_network
     env_file:
       - .env.local
-    volumes:
-      - ./config.ts:/app/config.ts

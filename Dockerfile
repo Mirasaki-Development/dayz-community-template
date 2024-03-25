@@ -6,7 +6,6 @@ RUN apk update
 WORKDIR /app
 RUN yarn global add turbo
 COPY . .
-RUN turbo prune --docker
 
 # Installer
 FROM node:alpine AS installer
@@ -17,12 +16,11 @@ WORKDIR /app
 RUN yarn global add pnpm
 RUN yarn global add turbo
 
-COPY --from=builder /app/out/json/ .
-COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
-COPY --from=builder /app/out/pnpm-workspace.yaml ./pnpm-workspace.yaml
+COPY . .
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/pnpm-lock.yaml ./pnpm-lock.yaml
 RUN pnpm install
 
-COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 
 # Uncomment and use build args to enable remote caching
@@ -53,5 +51,8 @@ COPY --from=installer --chown=nextjs:nodejs /app/public ./public
 
 # Expose the port the app runs on
 EXPOSE 3000
+
+# List current directory contents
+RUN ls -al
 
 CMD node server.js

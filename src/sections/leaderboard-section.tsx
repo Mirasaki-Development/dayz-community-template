@@ -74,7 +74,7 @@ const LeaderboardSection = ({ data: _data, error }: {
 
         {!error && <div className='relative mt-2'>
           {leaderboardData && <LeaderboardTable data={leaderboardData} displayStat={sortBy} />}
-          {!leaderboardData && <div className='w-full h-[60vh]' />}
+          {!leaderboardData && <div className='w-full h-[60lvh]' />}
         </div>}
       </section>
     </div>
