@@ -12,7 +12,7 @@ services:
       dockerfile: ./Dockerfile
     restart: always
     ports:
-      - 3000:3000
+      - 13001:3000
     networks:
       - app_network
     env_file:
