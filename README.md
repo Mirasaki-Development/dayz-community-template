@@ -14,7 +14,7 @@ A demo deployment showcasing this project can be found [here](https://template-1
 
 The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 **TLDR:** Fork the repo, and [authorize](https://vercel.com/new) Vercel to manage your fork - Done!
 
