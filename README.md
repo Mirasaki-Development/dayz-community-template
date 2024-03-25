@@ -18,16 +18,34 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 **TLDR:** Fork the repo, and [authorize](https://vercel.com/new) Vercel to manage your fork - Done!
 
-## 🔨 Installation
+## 📦 Installation (Docker, recommended)
 
-1. Install [PNpm](https://pnpm.io/installation) on your machine.
+1. Download and extract [the latest release](https://github.com/Mirasaki-Development/dayz-community-template/releases) and navigate into the newly created folder.
+2. Rename `/.env.example` to `/.env.local` (make sure [file extensions are enabled](https://www.youtube.com/watch?v=z5FBLAagPIc) if you're on Windows) and fill in your configuration.
+3. Open `/config.ts` and customize to your hearts content.
+4. Run the following commands in this exact order:
+
+```sh
+# Build the project
+docker compose build
+
+# Start the project
+docker compose start -d
+```
+
+The project is now available on [port 13001](http://localhost:13001/). This is (by default) only available locally through a Docker network bridge, and you should be able to add a web-server to the `docker-compose.yml` file [fairly easily](https://hub.docker.com/_/nginx/) if desired.
+
+## 🔨 Installation (Local, alternative)
+
+1. Install [Node.js](https://nodejs.org/en/download).
+2. Install [PNpm](https://pnpm.io/installation) on your machine.
     - Windows: `iwr https://get.pnpm.io/install.ps1 -useb | iex`
     - POSIX systems: `curl -fsSL https://get.pnpm.io/install.sh | sh -`
     - POSIX w/o CURL: `wget -qO- https://get.pnpm.io/install.sh | sh -`
-2. Download and extract [the latest release](https://github.com/Mirasaki-Development/dayz-community-template/releases) and navigate into the newly created folder.
-3. Rename `/.env.example` to `/.env.local` (make sure [file extensions are enabled](https://www.youtube.com/watch?v=z5FBLAagPIc) if you're on Windows) and fill in your configuration.
-4. Open `/config.ts` and customize the project to your hearts content.
-5. Run the following commands in this exact order:
+3. Download and extract [the latest release](https://github.com/Mirasaki-Development/dayz-community-template/releases) and navigate into the newly created folder. (Don't install the project in the `Desktop` directory if you're on Windows due to permissions)
+4. Rename `/.env.example` to `/.env.local` (make sure [file extensions are enabled](https://www.youtube.com/watch?v=z5FBLAagPIc) if you're on Windows) and fill in your configuration.
+5. Open `/config.ts` and customize to your hearts content.
+6. Run the following commands in this exact order:
 
 ```sh
 # Install dependencies
@@ -41,11 +59,6 @@ pnpm build
 ```
 
 The project is now available on [port 3000](http://localhost:3000/). This is only available on your local network.
-
-To allow anyone to reach your website, basic knowledge of web-servers (like [Apache](https://apache.org/) or [Nginx](https://nginx.org/en/)) is required.
-
-- An example Nginx file is included for your convenience [here](/nginx.example.conf).
-- This configuration serves all static assets, if these fail to load (like no styles applied to the website) use the [minimal conf instead](/nginx.min.conf).
 
 ## ⚙️ Configuration
 
@@ -64,6 +77,15 @@ Although simple styling configuration is done in the `/config.ts` file, theme cu
 The favicon (browser tab/bookmark icon for pages) can be customized by replacing the source files in `/src/app/favicon.ico`. You can generate these source files from your logo/icon [on this site](https://favicon.io/favicon-converter/). Simply upload your logo/icon and click "Download". **Remember** to update the `apple-touch-icon` and `favicon-16x16` images in `/public` as well!
 
 For more information on metadata files in Next.JS, check out the [developer reference](https://nextjs.org/docs/app/api-reference/file-conventions/metadata).
+
+### Web Server
+
+After you've set-up and configured the website, it will only be available on your local network. To allow anyone to reach your website, basic knowledge of web-servers (like [Apache](https://apache.org/) or [Nginx](https://nginx.org/en/)) is required.
+
+- An example Nginx file is included for your convenience [here](/examples/nginx.example.conf).
+- This configuration serves all static assets, if these fail to load (like no styles applied to the website) use the [minimal conf instead](/examples/nginx.min.conf).
+
+Web host providers (like [Vykix](https://portal.vykix.com/aff.php?aff=17)) usually provide this functionality for you. When looking for a host, make sure they support `Node.js` and/or `Next.js` and you'll be able to get started - there's no additional dependencies.
 
 ## 🛠️ Development
 
