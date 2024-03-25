@@ -1,11 +1,11 @@
 {
   "name": "dayz-community-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node .next/standalone/server.js",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
