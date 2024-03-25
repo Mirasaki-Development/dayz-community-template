@@ -20,6 +20,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## 📦 Installation (Docker, recommended)
 
+We recommend [Docker (Desktop)](https://www.docker.com/products/docker-desktop/) for any modern application, as it accelerates the build & run process and standardizes environments.
+
 1. Download and extract [the latest release](https://github.com/Mirasaki-Development/dayz-community-template/releases) and navigate into the newly created folder.
 2. Rename `/.env.example` to `/.env.local` (make sure [file extensions are enabled](https://www.youtube.com/watch?v=z5FBLAagPIc) if you're on Windows) and fill in your configuration.
 3. Open `/config.ts` and customize to your hearts content.
