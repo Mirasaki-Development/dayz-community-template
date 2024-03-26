@@ -32,7 +32,7 @@ We recommend [Docker (Desktop)](https://www.docker.com/products/docker-desktop/)
 docker compose build
 
 # Start the project
-docker compose start -d
+docker compose up -d
 ```
 
 The project is now available on [port 13001](http://localhost:13001/). This is (by default) only available locally through a Docker network bridge, and you should be able to add a web-server to the `docker-compose.yml` file [fairly easily](https://hub.docker.com/_/nginx/) if desired.
