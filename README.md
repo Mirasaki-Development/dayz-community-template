@@ -96,7 +96,8 @@ The following stack and tools are used for this template:
 - [PNpm](https://pnpm.io/) - For package management and faster installation of dependencies.
 - [Turborepo](https://turbo.build/repo) - For significantly faster build times.
 - [NextJS](https://nextjs.org/) - For building fast, scalable React applications with built-in SSR, SSG, and routing capabilities.
-- [Flowbite](https://flowbite.com) - For production-ready `blocks` (developer license).
+- [Flowbite](https://flowbite.com) - For production-ready Tailwind `blocks` and `components` (developer license).
+- [shadcn/ui](https://ui.shadcn.com/) - For quickly building your own component library.
 - [TailwindCSS](https://tailwindcss.com/) - For rapidly building custom user interfaces using utility-first CSS classes.
 - [Framer Motion](https://www.framer.com/motion/) - For creating fluid animations and interactive UI elements in React applications.
 - [Lucide React](https://lucide.dev/guide/packages/lucide-react) - For adding SVG icons and illustrations to React projects with ease.
