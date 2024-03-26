@@ -104,9 +104,9 @@ export const config: Config = {
     },
     {
       name: 'SKVAD EU3',
-      ipv4: '193.25.252.92',
+      ipv4: '193.25.252.24',
       gamePort: 2402,
-      steamQueryPort: 27016,
+      steamQueryPort: 27017,
       cftoolsApiId: '16c3c8d1-9e15-4729-a541-8a578288e43d',
     },
   ],
