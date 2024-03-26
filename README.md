@@ -89,6 +89,10 @@ After you've set-up and configured the website, it will only be available on you
 
 Web host providers (like [Vykix](https://portal.vykix.com/aff.php?aff=17)) usually provide this functionality for you. When looking for a host, make sure they support `Node.js` and/or `Next.js` and you'll be able to get started - there's no additional dependencies.
 
+### CFTools Leaderboard
+
+The [CFTools](https://cftools.com/) leaderboard can be disabled at any time. You can find your required `/.env.local` values by following [our guide](https://wiki.mirasaki.dev/docs/cftools-create-application). Please note the leaderboard endpoint requires an active CFTools subscription.
+
 ## 🛠️ Development
 
 The following stack and tools are used for this template:
