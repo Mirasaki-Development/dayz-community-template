@@ -66,6 +66,26 @@ The project is now available on [port 3000](http://localhost:3000/). This is onl
 
 The bulk of the configuration is done in the `/config.ts` file. This is a Typescript file, meaning the syntax for this configuration object is very similar to JSON. All keys are meant to be self-explanatory, if you need additional information - head on over to the `/src/lib/config.types.ts` file for explanations.
 
+### Environmental Values
+
+This section documents the values defined in the `/.env.local` file.
+
+> When configuring the CFTools Developer Application, you are required to [grant access to resources](https://wiki.mirasaki.dev/docs/cftools-create-application#grant-access-to-resources).
+
+```bash
+# Your Steam API key can be obtained here: https://steamcommunity.com/dev/apikey
+# The domain on the page linked above doesn't have to match
+# This is used to fetch your dayz server information
+STEAM_API_KEY=
+
+# CFTools Developer Application
+# Values can be grabbed from https://developer.cftools.cloud/applications
+# Please refer to the documentation if you're unsure: https://wiki.mirasaki.dev/docs/cftools-create-application
+# This is used to fetch the leaderboard information
+CFTOOLS_API_APPLICATION_ID=
+CFTOOLS_API_SECRET=
+```
+
 ### Static Files
 
 Static files/assets are served from the `/public` directory. Whenever an image (or other type of local file) is used in the configuration, it's value (the path) is relative to this root `public` directory. That means `/images/logo.png` in the configuration file points to `/public/images/logo.png`.
