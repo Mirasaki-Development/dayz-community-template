@@ -46,15 +46,23 @@ export const ServerCard = async ({
     data = await res.json();
   }
   catch (e) {
+    data = {
+      error: e,
+      response: {
+        servers: [],
+      },
+    };
     console.error('Error encountered while fetching server information:', e);
   }
 
   const serverData = data?.response?.servers?.[0] as ServerResponseItem | undefined;
 
+  if (!serverData) data.error = 'No servers found with that IP address + port. Server is offline, or the Steam API is down.';
+
   return (
     <div className={cn(
       'max-w-sm p-6 bg-white/[5%] backdrop-blur border border-gray-200 rounded-lg shadow  dark:border-gray-700',
-      'sm:min-w-[270px]', // Minimal supported resolution of 280px
+      'sm:w-[270px]', // Minimal supported resolution of 280px
       className,
     )}>
       <div className='flex items-center gap-2'>
@@ -68,9 +76,12 @@ export const ServerCard = async ({
         </h3>
       </div>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        Players: {serverData?.players ?? 0}/{serverData?.max_players ?? 0}
-        <br />
-        Map: {serverData?.map ?? 'Unknown'}
+        {data?.error && <div className='text-red-500'>Error: {data.error}</div>}
+        {!data?.error && <>
+          Players: {serverData?.players ?? 0}/{serverData?.max_players ?? 0}
+          <br />
+          Map: {serverData?.map ?? 'Unknown'}
+        </>}
       </p>
       <div className='flex items-center'>
         <CopyButton text={`${server.ipv4}:${server.gamePort}`} className='w-full'>
