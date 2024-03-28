@@ -94,6 +94,8 @@ Static files/assets are served from the `/public` directory. Whenever an image (
 
 Although simple styling configuration is done in the `/config.ts` file, theme customization can be performed in `/src/app/globals.css`. These are space-separated HSL values.
 
+You can use [this website](https://atmos.style/color-picker/hsl) to obtain your HSL values. Do note, `hsl(184.4, 95%, 60.8%)` format is incorrect, use `184.4 95% 60.8%` instead.
+
 ### Favicon (and other metadata files)
 
 The favicon (browser tab/bookmark icon for pages) can be customized by replacing the source files in `/src/app/favicon.ico`. You can generate these source files from your logo/icon [on this site](https://favicon.io/favicon-converter/). Simply upload your logo/icon and click "Download". **Remember** to update the `apple-touch-icon` and `favicon-16x16` images in `/public` as well!
