@@ -7,6 +7,8 @@ import { ThemeProvider } from '@/components/theme/theme-provider';
 import Header from '@/components/navigation/animated-header';
 import Footer from '@/components/footer/footer';
 
+export const runtime = config.runtime;
+
 export const viewport: Viewport = {
   themeColor: config.themeColor,
 };

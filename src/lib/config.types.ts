@@ -2,6 +2,13 @@ import { NavItem } from '@/lib/types';
 
 export type Config = {
   /**
+   * The runtime for this app. This determines the environment in which the app
+   * will run, and can affect the performance and capabilities of the app. If
+   * you're hosted on a server, you should use `nodejs`. If you're hosted on a
+   * serverless platform, you should use `edge`.
+   */
+  runtime: 'nodejs' | 'edge';
+  /**
    * The theme color for this app. This color is used by the browser to
    * customize the appearance of the browser's UI elements, and is used
    * throughout the app to provide a consistent color scheme.

@@ -1,6 +1,7 @@
 import { Config } from './src/lib/config.types';
 
 export const config: Config = {
+  runtime: 'nodejs',
   themeColor: "#5789f6",
   logoURL: "/images/logo.png",
   site: {
