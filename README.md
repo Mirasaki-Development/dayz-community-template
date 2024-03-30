@@ -16,7 +16,7 @@ The easiest way to deploy this Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-**TLDR:** Fork the repo, and [authorize](https://vercel.com/new) Vercel to manage your fork - Done!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMirasaki-Development%2Fdayz-community-template&env=STEAM_API_KEY,CFTOOLS_API_APPLICATION_ID,CFTOOLS_API_SECRET&envDescription=Credentials%20required%20for%20the%20application.&envLink=https%3A%2F%2Fgithub.com%2FMirasaki-Development%2Fdayz-community-template%3Ftab%3Dreadme-ov-file%23environmental-values&project-name=my-dayz-website&repository-name=my-dayz-website&demo-title=%5BDemo%5D%20DayZ%20Community%20Website&demo-description=An%20easy%20to%20customize%2C%20forever-free%20template%20to%20bring%20an%20online%20presence%20to%20your%20(DayZ)%20gaming%20community.&demo-url=https%3A%2F%2Ftemplate-1.mirasaki.dev%2F&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2FMirasaki-Development%2Fdayz-community-template%2Fmain%2Fpublic%2Fimages%2Fmarketing%2Fbanner.png)
 
 ## 📦 Installation (Docker, recommended)
 
