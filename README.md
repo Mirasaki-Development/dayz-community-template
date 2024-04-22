@@ -57,7 +57,7 @@ pnpm install
 pnpm build
 
 # Start the project
-pnpm build
+pnpm start
 ```
 
 The project is now available on [port 3000](http://localhost:3000/). This is only available on your local network.
