@@ -91,7 +91,7 @@ export const config: Config = {
   servers: [
     {
       name: 'SKVAD EU1',
-      ipv4: '193.25.252.921',
+      ipv4: '193.25.252.92',
       gamePort: 2302,
       steamQueryPort: 27016,
       cftoolsApiId: '7732f152-3b6b-4da5-9356-b43ebfef2012',
