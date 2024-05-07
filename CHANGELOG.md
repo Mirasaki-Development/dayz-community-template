@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.1.0...v1.1.1) (2024-05-07)
+
+
+### Bug Fixes
+
+* eu1 ipv4 ([0c89c61](https://github.com/Mirasaki-Development/dayz-community-template/commit/0c89c61566c9bd909b0ff3ed3c4c8397d8c111df))
+
 # [1.1.0](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.0.1...v1.1.0) (2024-03-30)
 
 
