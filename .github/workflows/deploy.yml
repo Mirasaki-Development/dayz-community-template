@@ -46,7 +46,7 @@ jobs:
       - name: Fetch Teleport binaries
         uses: teleport-actions/setup@v1
         with:
-          version: 14.2.3
+          version: 16.0.1
       - name: Fetch credentials using Machine ID
         id: auth
         uses: teleport-actions/auth@v2
@@ -57,8 +57,8 @@ jobs:
           anonymous-telemetry: 1
       - name: Deploy to Production
         run: |
-          tsh ssh mirasaki-development@mirasaki-development << 'ENDSSH'
-            cd /var/www/mirasaki/dayz-community-template
+          tsh ssh mirasaki-development@md01.md01.mirasaki.dev << 'ENDSSH'
+            cd /var/www/dayz-community-template
             git pull origin main
             docker compose build --no-cache --pull --quiet
             docker compose down
