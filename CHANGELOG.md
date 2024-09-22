@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.1.1...v1.1.2) (2024-09-22)
+
+
+### Bug Fixes
+
+* **ci:** update to new teleport cluster ([f05e600](https://github.com/Mirasaki-Development/dayz-community-template/commit/f05e6006f3fa2b66d8feb1e524672dc4953ddaa2))
+
 ## [1.1.1](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.1.0...v1.1.1) (2024-05-07)
 
 
