@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.1.2...v1.1.3) (2024-11-07)
+
+
+### Bug Fixes
+
+* remove dynamic imports, causing memory leaks in current next version ([710dce0](https://github.com/Mirasaki-Development/dayz-community-template/commit/710dce0e4760e4ff65d7795004b7bb1b5bbbb1dc))
+
 ## [1.1.2](https://github.com/Mirasaki-Development/dayz-community-template/compare/v1.1.1...v1.1.2) (2024-09-22)
 
 
