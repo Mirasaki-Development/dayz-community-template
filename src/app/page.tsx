@@ -2,12 +2,9 @@ import MainHero from '@/components/heros/main-hero';
 import AboutSection from '@/sections/about-section';
 import ServerNetworkSection from '@/sections/server-network-section';
 import { config } from '../../config';
-import dynamic from 'next/dynamic';
 import { LeaderboardEntry, getServerLeaderboards } from '@/lib/cftools';
 import ContactSection from '@/sections/contact-section';
-
-// Lazy load chonky leaderboard section
-const LeaderboardSection = dynamic(() => import('@/sections/leaderboard-section'));
+import LeaderboardSection from '@/sections/leaderboard-section';
 
 export default async function Home() {
   let data = config.cftools.leaderboard.enabled ? await getServerLeaderboards() : {};
